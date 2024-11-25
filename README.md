@@ -10,9 +10,10 @@ constructor(string memory name, string memory symbol) ERC20(name, symbol) Ownabl
 }
 ```
 
-    + Initializes the contract with a name and symbol for the token.
-    + Mints an initial supply of 1 token (adjusted for decimals) to the deployer of the contract.
-Custom Decimals
++ Initializes the contract with a name and symbol for the token.
++ Mints an initial supply of 1 token (adjusted for decimals) to the deployer of the contract.
+    
+#    Custom Decimals
 
 ```
 function decimals() public pure override returns (uint8) {
