@@ -1,4 +1,4 @@
-###    Types of Functions - ETH + AVAX
+#    Types of Functions - ETH + AVAX
 # Overview
 This repository contains a Solidity smart contract that implements an ERC-20 token with additional features such as custom decimals, minting, burning, and a custom token transfer function. The contract is built using OpenZeppelin libraries for security and functionality.
 
