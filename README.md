@@ -20,34 +20,40 @@ function decimals() public pure override returns (uint8) {
     return 3;
 }
 ```
-Overrides the default decimals to 3.
++ Overrides the default decimals to 3.
 
 #    Mint Function
-
-
+```
 function mint(address to, uint256 amount) external onlyOwner {
     _mint(to, amount);
 }
-Allows the contract owner to mint new tokens.
-Parameters:
-to: The address to receive the minted tokens.
-amount: The number of tokens to mint.
-Burn Function
+```
++ Allows the contract owner to mint new tokens.
++ Parameters:
+    + to: The address to receive the minted tokens.
+    + amount: The number of tokens to mint.
+      
+#    Burn Function
 
-
+```
 function burn(uint256 amount) external {
     _burn(msg.sender, amount);
 }
-Enables any user to burn tokens from their own balance.
-Parameters:
-amount: The number of tokens to burn.
-Custom Token Transfer
+```
 
++ Enables any user to burn tokens from their own balance.
++ Parameters:
+    + amount: The number of tokens to burn.
+    + 
+#    Custom Token Transfer
 
+```
 function transferToken(address destination, uint256 amount) public {
     _transfer(msg.sender, destination, amount);
 }
-Facilitates token transfers from the sender’s address to a specified destination.
-Parameters:
-destination: The recipient's address.
-amount: The number of tokens to transfer.
+```
+
++ Facilitates token transfers from the sender’s address to a specified destination.
++ Parameters:
+    + destination: The recipient's address.
+    + amount: The number of tokens to transfer.
