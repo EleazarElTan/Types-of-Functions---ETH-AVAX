@@ -44,7 +44,7 @@ function burn(uint256 amount) external {
 + Enables any user to burn tokens from their own balance.
 + Parameters:
     + amount: The number of tokens to burn.
-    + 
+  
 #    Custom Token Transfer
 
 ```
